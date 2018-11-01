@@ -31,13 +31,13 @@ function reading_list_enqueue(){
 add_action( 'wp_enqueue_scripts', 'reading_list_enqueue' );
 
 //ACTIVATION AND DEACTIVATION HOOKS
-function activate_portfolio_nells_plugin(){
+function activate_reading_list_nells_plugin(){
 	flush_rewrite_rules();
 }
 
-function deactivate_portfolio_nells_plugin(){
+function deactivate_reading_list_nells_plugin(){
 	flush_rewrite_rules();	
 }
 
-register_activation_hook(__FILE__, 'activate_portfolio_nells_plugin');
-register_deactivation_hook(__FILE__, 'deactivate_portfolio_nells_plugin');
+register_activation_hook(__FILE__, 'activate_reading_list_nells_plugin');
+register_deactivation_hook(__FILE__, 'deactivate_reading_list_nells_plugin');
