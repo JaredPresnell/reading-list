@@ -1,0 +1,1 @@
+Currently, this plugin references the sidebar in "page-books.php" via "get_template_part('inc/template-parts/nells', 'sidebar');" which will not work if there is a different theme or if the file structure gets changed.
